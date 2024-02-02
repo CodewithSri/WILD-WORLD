@@ -1,0 +1,535 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Salsa', cursive;
+}
+
+.navbar{
+   display: flex;
+   align-items: center;
+   padding: 10px;
+   justify-content: space-around;
+   padding-top: 15px;
+   border-bottom: 2px solid rgb(113, 111, 111);
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+   position: fixed;
+   width: 100%;
+   background-image: url(https://img.freepik.com/premium-vector/green-abstract-glass-background-design-natural-fresh-green-wallpaper-design_293525-29.jpg?w=360);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   z-index: 1;
+}
+.navbar .language{
+    width: 100px;
+    font-size: 18px;
+    margin-left: -30px;
+    border: none;
+    background: none;
+    color: white;
+    border: 2px solid green;
+    outline: none;
+}
+.language option{
+    color: black;
+    background-color: rgb(192, 220, 211);
+}
+.navbar-links{
+    display: flex;
+    column-gap: 120px;
+    align-items: center;
+    font-size: large;
+    cursor: pointer;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-links a::after{
+    content: '';
+    display: block;
+    width: 0; 
+    height: 2px;
+    background: rgb(63, 174, 63);
+    transition: width 0.3s ease;
+}
+.navbar-links a:hover::after{
+    width: 100%;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+/*Side Navbar*/
+.side-navbar{
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+    z-index: 1;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+
+}
+.header-top{
+    background-image: url(./images/elephant-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header{
+    align-items: center;
+    text-align: start;
+    width: 50%;
+    margin-left: 100px;
+    color: white;
+    position: relative;
+    padding-top: 18%;
+}
+.header button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border: 3px solid rgb(67, 173, 46);
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px grey;
+    background: none;
+    color: white;
+}
+.nature-content{
+    margin-top: 220px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+    padding-bottom: 10%;
+}
+.nature-1{
+    width: 200px;
+}
+.donation-popup{
+    width: 500px;
+    height: 500px;
+    background-color: #1d232c;
+    border-radius: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-right: 30px;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    top: -80%;
+    transition: 2s;
+}
+.donation-popup button{
+    width: 150px;
+    height: 40px;
+    background: none;
+    border: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+}
+/*Submit popup button*/
+.wrapper {
+  position: relative;
+}
+
+.confetti-button {
+  font-size: 1.15rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 100vmax;
+  background: linear-gradient(90deg, #a8ff78 50%, #78ffd6);
+  cursor: pointer;
+  transition: transform 150ms ease-in;
+}
+
+.confetti-button:hover {
+  transform: scale(1.1);
+}
+
+.wrapper canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+/*raiseup content*/
+.raiseup-main{
+    display: flex;
+    margin-top: 80px;
+}
+.raiseup-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-left: 50px;
+}
+.raise-content{
+    width: 550px;
+    padding-left: 100px;
+    margin-top: 60px;
+}
+.raise-content .btn{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border: 2px solid rgb(16, 126, 40);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px rgb(107, 105, 105);
+}
+.raise-content .btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(16, 126, 40);
+    color: white;
+}
+/*counter*/
+.counter-main{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+#section-counter{
+    width: 530px;
+    height: 250px;
+    border: 2px transparent black;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    background-image: url(https://c0.wallpaperflare.com/preview/689/946/423/blurred-background-close-up-colors-dark-green.jpg);
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+#section-counter button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border: 2px solid rgb(255, 254, 254);
+    border-radius: 10px;
+    margin-top: 30px;
+    background: none;
+    color: white;
+    font-weight: bolder;
+}
+.counter-top{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+.counter-img img{
+    width: 600px;
+    height: 303px;
+    margin-left: 20px;
+}
+.counter-bg-image{
+    position: absolute;
+    width: 100%;
+    margin-top: -180px;
+    z-index: -1;
+    height: 100%;
+
+}
+/*Nature Container*/
+.nature-cont1{
+    margin-left: 50px;
+}
+.nature-cont1 p{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.nature-cont1 h2{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+.nature-cont1 h1{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.nature-container-main{
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+}
+.nature-main1{
+    border: 2px solid black;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    line-height: 20px;
+    margin-left: 75px;
+}
+.nature-main1 button{
+    border: none;
+    margin-top: 20px;
+    background: none;
+}
+.nature-main1 a{
+    text-decoration: none;
+    color: rgb(91, 85, 85);
+    font-weight: bolder;
+    font-size: 15px;
+}
+.nature-main1 a:hover{
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(50, 109, 50);
+    color: white;
+}
+/*Embeded container*/
+.embeded-container{
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.embeded-container-para{
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+}
+.embeded-container-para span{
+    font-size: 28px;
+    color: skyblue;
+}
+.embeded-container-2{
+    margin-top: 50px;
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: space-around;
+}
+.embeded-container-2 p{
+    width: 500px;
+    font-size: large;
+    margin-top: 30px;
+}
+.embeded-container-2 div button{
+    width: 250px;
+    height: 50px;
+    border: NONE;
+    border: 3px solid ;
+    margin-top: 50px;
+    margin-left: 80px;
+    background-color:rgb(67, 173, 46);
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.embeded-container-2 iframe{
+    width: 700px;
+    height: 350px;
+}
+/*create change*/
+.createchange-conatainer-main{
+    background-image: url(https://img.freepik.com/premium-vector/gradient-background-abstract-wallpapar-design_669134-54.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705190400&semt=ais);
+    color: white;
+    background-size: 100%;
+    
+}
+.createchange-conatainer-main .h1{
+    font-size: 55px;
+    padding-top: 50px;
+    text-align: center;
+}
+.createchange-conatainer{
+    display: flex;
+    justify-content: space-around;
+}
+.change-1{
+    text-align: center;
+    width: 330px;
+    padding: 50px;
+}
+/*Campus change*/
+.campus-container-main{
+    overflow: hidden;
+}
+.campus-container{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 40s ease-in-out infinite alternate;
+    position: relative;
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(0%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-100%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    100%{transform: translateX(0%);}
+}
+.campus-conatainer-head{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(209, 29, 20);
+}
+.campus-1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    border: 2px transparent black;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.campus-1 p{
+    width: 600px;
+    font-size: 23px;
+}
+.campus-1 button{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border: 2px solid rgb(255, 243, 243);
+    background-color: rgb(209, 29, 20);
+    font-weight: bolder;
+    font-size: larger;
+    color: white;
+}
+/*Footer content*/
+.footer-content{
+    display: flex;
+    margin-top: 50px;
+    background-color: rgb(218, 217, 217);
+    width: 100%;
+}
+.wild-content1{
+    width: 18%;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.awards{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -20px;
+}
+.wild-content2{
+    padding: 20px;
+    margin-left: 50px;
+}
+.wild-content2 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-top: 10px;
+}
+.wild-content3{
+    padding: 20px;
+    margin-left: 50px;
+}
+.wild-content3 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-top: 10px;
+}
+.wild-content4{
+    padding: 20px;
+    margin-left: 50px;
+}
+.wild-content4 a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-top: 10px;
+}
+.wild-content5{
+    padding: 20px;
+    margin-left: 50px;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(https://img.freepik.com/free-photo/smooth-green-background_53876-108464.jpg);
+    background-repeat: no-repeat;
+    color: white;
+}
+.wild-content5 button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border: 2px solid black;
+    background-color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.wild-content5 a{
+    text-decoration: none;
+    color: white;
+}
+.footer-end{
+    background-color: black;
+    width: 100%;
+    color: white;
+    height: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+@media screen and (max-width:800px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar .language{
+        width: 70px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .nature-content{
+        display:flex;
+        color: black;
+        flex-direction: column;
+        margin-top: 200px;
+        margin-left: 20px;
+    }
+    .nature-1{
+        margin-top: 10px;
+    }
+    .raiseup-main{
+        display: block;
+    }
+}
